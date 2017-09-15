@@ -131,6 +131,7 @@ header .header-black li a{
 header #logotipo {
 	position: absolute;
 	top: 20px;
+	z-index: 3;
 }
 #menu {
 	margin: 12px 0;
@@ -142,6 +143,13 @@ header #logotipo {
 
 #menu li.search {
 	width: 182px;
+	transition: 1s;
+}
+
+#menu li.search.ativo {
+
+	width: 300px;
+
 }
 
 #menu li.search input{
@@ -150,6 +158,12 @@ header #logotipo {
 	border: none;
 	height: 30px;
 	line-height: 30px;
+}
+
+#menu li.search.ativo input{
+
+	width: 182px;
+
 }
 
 #menu li.search ::-webkit-input-placeholder {
@@ -245,6 +259,14 @@ header #logotipo {
 	font-weight: bold;
 }
 
+#news .thumbnails .item-inner {
+	padding: 10px;
+}
+
+#news .thumbnails .item-inner img {
+	width: 100%;
+}
+
 #estatisticas {
 	background-color: #5E299A;
 	width: 100%;
@@ -332,7 +354,6 @@ footer .row p {
 	line-height: 55px;
 	margin-bottom: 0;
 }
-
 
 footer .row-cinza-claro {
 	height: 200px;
@@ -438,7 +459,6 @@ footer .list-socials li {
 	display: inline-block;
 	margin-right: 5px;
 }
-
 
 footer .list-socials a{
 	display: block;
